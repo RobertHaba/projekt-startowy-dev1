@@ -422,6 +422,20 @@ font-family: 'Montserrat', sans-serif;
         justify-content: flex-start;
     }
     
+    @keyframes moveUpDown {
+        0%,
+        100% {
+            top: 0px;
+        }
+        50% {
+            top: 5px;
+        }
+    }
+    
+    .animation--move-up-down {
+        animation: 0.7s moveUpDown linear;
+    }
+    
     .slider__column {
         width: 100%;
         height: auto;
