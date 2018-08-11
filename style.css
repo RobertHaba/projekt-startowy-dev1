@@ -186,9 +186,13 @@ font-family: 'Montserrat', sans-serif;
 .item4__img-back {
     filter: blur(1px);
     box-shadow: 1px 16px 34px -4px rgba(0,0,0,0.75);
+    max-width: 100%;
+    height: auto;
  }
  .item4__img-front {
-     box-shadow: -5px 55px 35px -44px rgba(0,0,0,0.75);
+    box-shadow: -5px 55px 35px -44px rgba(0,0,0,0.75);
+    max-width: 100%;
+    height: auto;
  }
 .item4__img--position{
     position: absolute;
@@ -196,14 +200,13 @@ font-family: 'Montserrat', sans-serif;
     left:0;
     bottom: 0;
     right: 0;
-    margin: auto
-  }
+    margin: auto;
+}
 .item5 {
     grid-area: 3 / 2 / 4 / 3;
     padding-right: 12.5vw;
     padding-left: 4vw;
 }
-
 .quoteicon {
     width:60px;
     height: 60px;
