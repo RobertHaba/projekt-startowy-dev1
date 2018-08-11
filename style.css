@@ -144,7 +144,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
-    
+
     .page__section--home {
         position: relative;
         height: 100vh;
@@ -721,10 +721,14 @@ font-family: 'Montserrat', sans-serif;
     .item4__img-back {
         filter: blur(1px);
         box-shadow: 1px 16px 34px -4px rgba(0, 0, 0, 0.75);
+        max-width: 100%;
+        height: auto;
     }
     
     .item4__img-front {
         box-shadow: -5px 55px 35px -44px rgba(0, 0, 0, 0.75);
+        max-width: 100%;
+        height: auto;
     }
     
     .item4__img--position {
