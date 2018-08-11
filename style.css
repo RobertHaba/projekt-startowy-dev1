@@ -108,7 +108,7 @@
     .page__header,
     .page__footer {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -116,9 +116,8 @@
     
     .page__section {
         background-color: #FFF;
-      
     }
-
+    
     .page__layout {
         width: 1200px;
         height: 100%;
@@ -140,3 +139,171 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
     
+    .btn {
+        font-family: 'Montserrat';
+        padding: 10px 15px;
+        color: #FFF;
+    }
+    
+    .btn--aqua {
+        background-color: #46E1F5;
+    }
+    
+    .btn--aqua-d-shadow {
+        box-shadow: 2px 2px 14px 5px rgba(111, 89, 223, 0.527);
+    }
+    
+    .btn--aqua-l-shadow {
+        box-shadow: 2px 2px 14px 5px rgba(147, 126, 252, 0.507);
+    }
+    
+    .btn--l-shadow {
+        box-shadow: 3px 3px 14px 2px rgba(199, 199, 199, 0.507);
+    }
+    /*
+    SECTION 2
+    */
+    
+    .page__layout--features {
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: 30vh auto 30vh;
+        font-family: 'Montserrat';
+    }
+    
+    .features-header {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        align-content: center;
+        justify-items: center;
+    }
+    
+    .features-header__title {
+        color: #888;
+        font-weight: bold;
+        letter-spacing: 1.3px;
+        padding: 10px;
+    }
+    
+    .features-header__title--small {
+        font-size: 13px;
+    }
+    
+    .features-header__text {
+        font-size: 22px;
+    }
+    
+    .features-container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-row: 2;
+        grid-column: 1;
+        align-content: center;
+        justify-content: center;
+        grid-template-rows: repeat(2, 240px);
+        grid-template-columns: repeat(3, 320px);
+        grid-gap: 60px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .features-container {
+            grid-template-rows: repeat(3, 240px);
+            grid-template-columns: repeat(2, 320px);
+        }
+    }
+    
+    @media screen and (max-width: 790px) {
+        .features-container {
+            grid-template-rows: repeat(6, 240px);
+            grid-template-columns: repeat(1, 320px);
+        }
+    }
+    
+    .features-box {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: repeat(2, 50%);
+        background-color: #FFF;
+        box-shadow: 0 0 23px 2px #EEE;
+    }
+    
+    .features-box__column {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .features-box__column--center-down {
+        justify-content: flex-end;
+    }
+    
+    .features-box__text {
+        margin: 2px 0;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+    
+    .features-box__text--purple {
+        color: #9c89ff;
+    }
+    
+    .features-box__icon {
+        width: 70px;
+        height: 70px;
+        background: url('./img/icons/chart.svg') no-repeat center;
+        background-size: 100%;
+    }
+    
+    .icon--social-group {
+        background-image: url('./img/icons/network.svg')
+    }
+    
+    .icon--analytics {
+        background-image: url('./img/icons/analytics.svg')
+    }
+    
+    .icon--chart {
+        background-image: url('./img/icons/chart.svg')
+    }
+    
+    .icon--mail {
+        background-image: url('./img/icons/mail.svg')
+    }
+    
+    .icon--paper {
+        background-image: url('./img/icons/paper.svg')
+    }
+    
+    .icon--dart {
+        background-image: url('./img/icons/dart.svg')
+    }
+    
+    .features-box--blue {
+        background-image: linear-gradient(to right, #bfacfe, #af99ff, #9f86ff, #8d73ff, #7a60ff);
+    }
+    
+    .features-box--aqua {
+        background-image: linear-gradient(to right, #32def9, #3de2fa, #47e7fb, #50ebfb, #59effc);
+    }
+    
+    .features-box--red {
+        background-image: linear-gradient(to right, #c43b52, #d0536e, #da6a8a, #e180a4, #e897bc);
+    }
+    
+    .features-footer {
+        display: grid;
+        grid-row: 3;
+        grid-column: 1;
+        align-content: center;
+        justify-items: center;
+    }
