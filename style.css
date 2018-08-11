@@ -213,6 +213,7 @@ font-family: 'Montserrat', sans-serif;
 }
 .grid__footer {
     grid-area: 4 / 1 / 5 / 5;
+    text-align: center;
 }
 .grid__p {
     font-size:13px;
